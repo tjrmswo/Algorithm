@@ -9,4 +9,4 @@ for i in range(N-1):
         cnt.append(a)
         a = 0
 cnt.append(a)
-print(cnt)
+print(max(cnt))
