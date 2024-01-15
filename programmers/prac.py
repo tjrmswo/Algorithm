@@ -1,14 +1,14 @@
-N,n = input().split()
-def solution(my_string, is_prefix):
-    answer = 0
-    for i in range(0,len(my_string)):
-        my_string = my_string[:i]
-        if my_string == is_prefix:
-            answer = 1
-            break
-        else:
-            continue
+Ns = "oxooxoxxox"
+def solution(myString):
+    answer = []
+    result = 0
+    for i in range(len(myString)):
+        if myString[i] != 'x':
+            answer.append(myString[i])
+        # elif myString[i] == 'x':
+        #     answer.append(result)
+        #     result = 0
     print(answer)
+    print(len(myString))
     return answer
-solution(N,n)
-
+solution(Ns)
