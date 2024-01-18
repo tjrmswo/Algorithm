@@ -1,14 +1,11 @@
-Ns = "oxooxoxxox"
-def solution(myString):
-    answer = []
-    result = 0
-    for i in range(len(myString)):
-        if myString[i] != 'x':
-            answer.append(myString[i])
-        # elif myString[i] == 'x':
-        #     answer.append(result)
-        #     result = 0
-    print(answer)
-    print(len(myString))
-    return answer
-solution(Ns)
+Ns = 32142123
+N = 'pPoooyY'
+n = [3,2,13]
+m = [1,8,76]
+def solution(n):
+    if n < 10:
+        return [n]
+    return [n % 10] + solution(n // 10)
+print(solution(Ns))
+print(n+m)
+print(sorted(n,reverse=True))
