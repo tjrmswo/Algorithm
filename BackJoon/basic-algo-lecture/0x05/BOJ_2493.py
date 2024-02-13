@@ -11,8 +11,6 @@ max_N = 0
 for i in range(len(susin)):
     copy = susin.copy()
     while len(copy) > 0:
-        # copy = filter(lambda x: x >= susin[i], copy)
-        # print(copy)
         max_N = copy.pop()
         if susin[i] < max_N and susin.index(susin[i]) > susin.index(max_N):
             stack.append(susin.index(max_N) + 1)
@@ -22,6 +20,7 @@ for i in range(len(susin)):
     else:
         stack.append(0)
 print(stack)
+
 # 현재 값은 잘 나오는데 시간 초과가 발생한다..
 # 애초에 기준에 부합하지 않은 값은 애초에 제외하면
 # 해결된다는 것을 백준 질문 게시판을 통해 알게 됨
