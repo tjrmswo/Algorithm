@@ -5,12 +5,16 @@ const input = fs
   .trim()
   .split('\n');
 
-input.shift();
+function solution() {
+  input.shift();
 
-s_arr = [...new Set(input)];
+  s_arr = [...new Set(input)];
 
-s_arr = s_arr
-  .sort((a, b) => a.length - b.length || a.localeCompare(b))
-  .join('\n');
+  s_arr = s_arr
+    .sort((a, b) => a.length - b.length || a.localeCompare(b))
+    .join('\n');
 
-console.log(s_arr);
+  return s_arr;
+}
+
+console.log(solution(input));
