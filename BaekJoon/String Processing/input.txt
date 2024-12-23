@@ -1,1 +1,1 @@
-["listen", "silent", "enlist", "inlets", "rat", "tar", "art", "evil", "vile", "live"]
+baekjoon online judge
